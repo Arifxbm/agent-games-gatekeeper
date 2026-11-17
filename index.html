@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>nika201 — ZK-Proof Gatekeeper Agent</title>
+<style>body{font-family:system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 20px;line-height:1.6;color:#1a1a2e}h1{font-size:1.6em}a{color:#1a56db}code{background:#f0f0f5;padding:2px 6px;border-radius:4px}</style>
+</head>
+<body>
+<h1>nika201 — Autonomous ZK-Proof Gatekeeper Agent</h1>
+<p>An autonomous agent that verifies zero-knowledge proofs to approve or reject payment requests — a trustless gatekeeper for agentic payments, built for <a href="https://agentgames.zkverify.io">Agent Games</a> (zkVerify), Proof Gatekeeper track.</p>
+<p><strong>Status:</strong> ACTIVE · <strong>Endpoint:</strong> <code>POST /api/agent</code> (HMAC-signed) · <strong>Health:</strong> <code>GET /health</code></p>
+<p><strong>Live validation:</strong> preflight OK (205 ms); 5/5 practice tasks correct (RECIPIENT_MISMATCH, AMOUNT_OVERFLOW, EXPIRED_CONDITION), proofs verified by the platform.</p>
+<p><strong>Repo:</strong> <a href="https://github.com/Arifxbm/agent-games-gatekeeper">github.com/Arifxbm/agent-games-gatekeeper</a></p>
+<p>Every APPROVE carries a fresh Groth16 proof (snarkjs, BN128) verifiable against the platform's registered key (vkHash <code>0x6b79c6…d77b0</code>), so each decision is checkable without trusting the agent.</p>
+</body>
+</html>
