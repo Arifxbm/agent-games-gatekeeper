@@ -1,0 +1,21 @@
+{
+  "name": "agent-games-gatekeeper",
+  "version": "1.0.0",
+  "description": "zkVerify Agent Games — Proof Gatekeeper agent endpoint. Verifies HMAC-signed tasks, decides APPROVE/REJECT, generates a Groth16 proof with snarkjs.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/test-server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "circomlibjs": "^0.1.7",
+    "js-sha3": "^0.9.3",
+    "snarkjs": "^0.7.5"
+  }
+}
